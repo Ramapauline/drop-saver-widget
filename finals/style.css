@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('pic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+}
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 80vh;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+.sidebar {
+    width: 260px;
+    background: #004d80; 
+    color: #f0f8ff;
+    padding: 30px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+}
+.sidebar h2 {
+    margin: 0 0 40px 0;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+.sidebar a {
+    display: block;
+    color: #e0f0ff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 0;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background: #007acc;
+    color: white;
+}
+.content {
+    flex-grow: 1;
+    padding: 50px 40px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    background: white;
+    padding: 35px 40px;
+    border-radius: 15px;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    color: #222;
+}
+button {
+    background: #007acc;
+    border: none;
+    padding: 14px 28px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,122,204,0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #005fa3;
+    box-shadow: 0 6px 25px rgba(0,95,163,0.6);
+}
+.hidden {
+    display: none;
+}
+.content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 122, 204, 0.5);
+    border-radius: 4px;
+}
+
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
